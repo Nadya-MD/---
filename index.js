@@ -96,7 +96,7 @@ const courses = [
 const teachers = [
     {
         id: 1,
-        name: "Александр Иванов",
+        name: "Сидарцов Пётр Сергеевич",
         position: "Senior Frontend Developer",
         description: "Опыт работы в веб-разработке более 8 лет. Работал в крупных IT-компаниях. Специализируется на JavaScript, React и Vue.js.",
         experience: "8 лет",
@@ -105,7 +105,7 @@ const teachers = [
     },
     {
         id: 2,
-        name: "Мария Петрова",
+        name: "Щерба Светлана Вячеславовна",
         position: "Python Developer",
         description: "Backend-разработчик с фокусом на Python и Django. Участвовала в создании высоконагруженных систем.",
         experience: "6 лет",
@@ -114,7 +114,7 @@ const teachers = [
     },
     {
         id: 3,
-        name: "Дмитрий Сидоров",
+        name: "Ильенков Сергей Сергеевич",
         position: "UI/UX Designer",
         description: "Дизайнер с более чем 7-летним опытом. Создавал интерфейсы для банков, стартапов и корпоративных приложений.",
         experience: "7 лет",
@@ -123,7 +123,7 @@ const teachers = [
     },
     {
         id: 4,
-        name: "Елена Кузнецова",
+        name: "Кузнецова Елена Дмитриевна",
         position: "Digital Marketing Specialist",
         description: "Маркетолог с 10-летним опытом. Помогла более 50 компаниям увеличить продажи через digital-каналы.",
         experience: "10 лет",
@@ -132,7 +132,7 @@ const teachers = [
     },
     {
         id: 5,
-        name: "Ольга Смирнова",
+        name: "Тимошенко Александра Сергеевна",
         position: "English Teacher",
         description: "Преподаватель английского с международной сертификацией CELTA. Специализируется на техническом английском.",
         experience: "12 лет",
@@ -547,8 +547,7 @@ function initForm() {
         const email = document.getElementById('email').value;
         const course = document.getElementById('course').value;
         const message = document.getElementById('message').value;
-        
-        // В реальном приложении здесь был бы AJAX-запрос к серверу
+
         // Для демонстрации просто показываем сообщение
         alert(`Спасибо, ${name}! Ваша заявка успешно отправлена. Мы свяжемся с вами по телефону ${phone} в ближайшее время.`);
         
@@ -620,7 +619,7 @@ function formatPrice(price) {
     return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 }
 
-// Добавляем стили для бейджей категорий
+// стили для бейджей категорий
 const style = document.createElement('style');
 style.textContent = `
     .category-badge {

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Код будущего</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="#home" class="nav-link" data-page="home">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Код будущего</span>
+                    </a>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active" data-page="home">Главная</a></li>
+                        <li><a href="#about" class="nav-link" data-page="about">О школе</a></li>
+                        <li><a href="#courses" class="nav-link" data-page="courses">Каталог курсов</a></li>
+                        <li><a href="#teachers" class="nav-link" data-page="teachers">Преподаватели</a></li>
+                        <li><a href="#contacts" class="nav-link" data-page="contacts">Контакты</a></li>
+                    </ul>
+                    
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#home" class="nav-link active" data-page="home">Главная</a>
+            <a href="#about" class="nav-link" data-page="about">О школе</a>
+            <a href="#courses" class="nav-link" data-page="courses">Каталог курсов</a>
+            <a href="#teachers" class="nav-link" data-page="teachers">Преподаватели</a>
+            <a href="#contacts" class="nav-link" data-page="contacts">Контакты</a>
+            <button class="close-mobile-menu"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Основное содержимое -->
+    <main class="main-content">
+        <!-- Главная страница -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Образование для успешного будущего</h1>
+                        <p class="hero-subtitle">Профессиональные курсы от ведущих экспертов с практической направленностью</p>
+                        <div class="hero-buttons">
+                            <a href="#courses" class="btn btn-primary" data-page="courses">Выбрать курс</a>
+                            <a href="#about" class="btn btn-outline" data-page="about">О нас</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="features">
+                    <h2 class="section-title">Почему выбирают нас</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <h3>Опытные преподаватели</h3>
+                            <p>Все наши педагоги - практикующие специалисты с опытом работы более 5 лет</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h3>Сертификаты</h3>
+                            <p>По окончании курса вы получаете официальный сертификат</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Гибкий график</h3>
+                            <p>Занимайтесь в удобное время: утром, днем, вечером</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h3>Помощь в трудоустройстве</h3>
+                            <p>Помогаем с составлением резюме и подготовкой к собеседованиям</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="popular-courses">
+                    <h2 class="section-title">Популярные курсы</h2>
+                    <div class="courses-grid" id="popular-courses">
+                        <!-- Курсы загружаются через JS -->
+                    </div>
+                    <div class="text-center">
+                        <a href="#courses" class="btn btn-secondary" data-page="courses">Все курсы</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Страница "О школе" -->
+        <section id="about" class="page">
+            <div class="container">
+                <h1 class="page-title">О нашей школе</h1>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Код будущего</h2>
+                        <p>Мы - современная образовательная платформа, основанная в 2010 году. За годы работы мы обучили более 5000 студентов, многие из которых добились значительных успехов в карьере.</p>
+                        
+                        <p>Наша миссия - сделать качественное образование доступным для каждого, независимо от возраста, места проживания и уровня подготовки.</p>
+                        
+                        <div class="mission">
+                            <h3>Наши ценности:</h3>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Практическая направленность обучения</li>
+                                <li><i class="fas fa-check-circle"></i> Индивидуальный подход к каждому студенту</li>
+                                <li><i class="fas fa-check-circle"></i> Современные методики преподавания</li>
+                                <li><i class="fas fa-check-circle"></i> Поддержка выпускников после обучения</li>
+                                <li><i class="fas fa-check-circle"></i> Постоянное обновление учебных программ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Наша школа">
+                    </div>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="12">0</span>
+                        <span class="stat-text">Лет на рынке</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-text">Образовательных курсов</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="5000">0</span>
+                        <span class="stat-text">Выпускников</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="30">0</span>
+                        <span class="stat-text">Преподавателей</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Страница "Каталог курсов" -->
+        <section id="courses" class="page">
+            <div class="container">
+                <h1 class="page-title">Каталог курсов</h1>
+                
+                <div class="course-filters">
+                    <button class="filter-btn active" data-filter="all">Все курсы</button>
+                    <button class="filter-btn" data-filter="programming">Программирование</button>
+                    <button class="filter-btn" data-filter="design">Дизайн</button>
+                    <button class="filter-btn" data-filter="marketing">Маркетинг</button>
+                    <button class="filter-btn" data-filter="language">Языки</button>
+                </div>
+                
+                <div class="courses-grid" id="courses-list">
+                    <!-- Курсы загружаются через JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Страница отдельного курса -->
+        <section id="course-detail" class="page">
+            <div class="container">
+                <a href="#courses" class="back-btn" data-page="courses">
+                    <i class="fas fa-arrow-left"></i> Назад к каталогу
+                </a>
+                
+                <div class="course-detail-content" id="course-detail-content">
+                    <!-- Контент курса загружается через JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Страница "Преподаватели" -->
+        <section id="teachers" class="page">
+            <div class="container">
+                <h1 class="page-title">Наши преподаватели</h1>
+                
+                <div class="teachers-grid" id="teachers-list">
+                    <!-- Преподаватели загружаются через JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Страница "Контакты" -->
+        <section id="contacts" class="page">
+            <div class="container">
+                <h1 class="page-title">Контакты</h1>
+                
+                <div class="contacts-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <!-- <div class="contact-text">
+                                <h3>Адрес</h3>
+                                <p>г. Москва, ул. Образовательная, д. 15, офис 305</p>
+                            </div> -->
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Телефон</h3>
+                                <p>+7 (495) 123-45-67</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>nadyamd2008@mail.ru</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Часы работы</h3>
+                                <p>Пн-Пт: 9:00 - 20:00</p>
+                                <p>Сб-Вс: 10:00 - 18:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Оставьте заявку</h3>
+                        <form id="application-form">
+                            <div class="form-group">
+                                <label for="name">Имя *</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Телефон *</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="course">Интересующий курс</label>
+                                <select id="course">
+                                    <option value="">Выберите курс</option>
+                                    <option value="web">Веб-разработка</option>
+                                    <option value="python">Python для начинающих</option>
+                                    <option value="design">UI/UX дизайн</option>
+                                    <option value="marketing">Цифровой маркетинг</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Сообщение</label>
+                                <textarea id="message" rows="4"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- <div class="map-container">
+                    <h3>Мы на карте</h3>
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>г. Москва, ул. Образовательная, д. 15</p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Код будущего</h3>
+                    <p>Образование для успешного будущего. Профессиональные курсы от ведущих экспертов.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#home" data-page="home">Главная</a></li>
+                        <li><a href="#courses" data-page="courses">Каталог курсов</a></li>
+                        <li><a href="#teachers" data-page="teachers">Преподаватели</a></li>
+                        <li><a href="#contacts" data-page="contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> nadyamd2008@mail.ru</p>
+                    <!-- <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Образовательная, 15</p> -->
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Код будущего. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
